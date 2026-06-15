@@ -88,7 +88,7 @@ a:after{
 
 .splash-screen{
     height: 100vh;
-    background-image: url(img/image15.png);
+    background-image: url(./image15.png);
     background-size: cover;
     background-position: center;
     position: relative;
