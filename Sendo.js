@@ -1,6 +1,6 @@
 // Splash screen → Landing page
 
-if(window.location.pathname.includes("Sendo.html")){
+if(window.location.pathname.includes("index.html")){
 
     setTimeout(() => {
 
