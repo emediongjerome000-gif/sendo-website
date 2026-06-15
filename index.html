@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body onload="setTimeout(()=>window.location=''Sendo1.html',5000)">
         <header class="logo-section">
             <div class="navbar">
                 <h1 class="logo">
@@ -38,6 +38,13 @@
                 <p>Reliable&bull;Affordable&bull;Everywhere</p>
             </div>
         </div>
-        <script src="./Sendo.js"></script>
+
+        <script>
+            setTimeout(function(){
+                window.location.href = "Sendo1.html";
+            },5000);
+        </script>
+        
+        <script src="index.js"></script>
     </body>
 </html>
