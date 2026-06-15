@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #FFF;
+    transition: opacity .5s ease;
+}
+
+.logo-section{
+    width: 100%;
+    background-color: #fff;
+    color: #1e1e1e;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    gap: 1rem;
+}
+
+.logo{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+    font-weight: bolder;
+    background: white;
+    color: #E31B23;
+}
+
+nav, a{
+    background-color: transparent;
+    color: #1e1e1e;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 1rem 0.5rem 0.5rem;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+}
+
+a:hover, a:focus{
+    background-color: transparent;
+    color: #E31B23;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    border: none;
+}
+
+a:after{
+    background-color:transparent;
+    color: #1e1e1e;
+}
+
+.icons{
+    background-color: transparent;
+    display: flex;
+    justify-items: space-between;
+    gap: 40px;
+    padding: 1rem 0.5rem 0.5rem;
+}
+
+#notification, #user{
+    color: #1e1e1e;
+    background-color: #e9e7e7;
+    padding: 0.75rem;
+    border-radius: 100%;
+}
+#notification:hover, #user:hover{
+    color: #E31B23;
+    background-color: #fff0ee;
+    padding: 0.75rem;
+    border-radius: 50%;
+}
+
+.splash-screen{
+    height: 100vh;
+    background-image: url(img/image15.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(80, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    color: #fff;
+    text-align: center;
+
+    padding: 64px;
+    gap: 10px;
+}
+
+.overlay h1, .overlay p, .overlay h2{
+    animation: fadeIn 2.5s ease;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translate(30px)
+    }
+        
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overlay h1{
+    font-size: 5rem;
+}
+
+.overlay h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.overlay p{
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.apple{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #E31B23;
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 50px;
+    font-size: larger;
+}
+
+.google{
+    border: 3px solid white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 24px 8px 16px;
+    border-radius: 20px;
+    gap: 10px;
+    font-size: larger;
+    height: 55px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 60px;
+    
+}
+
+/* Tablet */
+@media screen and (max-width:992px){
+
+    .logo-section{
+        padding: 1rem 2rem;
+    }
+
+    .overlay{
+        padding: 3rem;
+    }
+
+    .overlay h1{
+        font-size: 4rem;
+    }
+
+    .overlay h2{
+        font-size: 2rem;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+    .logo-section,
+    .navbar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .icons{
+        gap: 20px;
+    }
+
+    .overlay{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .overlay p{
+        text-align: center;
+    }
+
+    .overlay h1{
+        font-size: 3rem;
+    }
+
+    .overlay h2{
+        font-size: 1.5rem;
+    }
+
+    .button{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+}/* Small Phones */
+@media screen and (max-width:480px){
+
+    .overlay h1{
+        font-size: 2.2rem;
+    }
+
+    .overlay h2{
+        font-size: 1.2rem;
+    }
+
+    .overlay p{
+        font-size: 14px;
+    }
+
+    .apple,
+    .google{
+        width: 100%;
+        max-width: 250px;
+    }
+
+}
