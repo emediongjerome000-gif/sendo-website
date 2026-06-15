@@ -1,18 +1,16 @@
 // Splash screen → Landing page
 
-if(window.location.pathname.includes("index.html")){
+setTimeout(() => {
+
+    document.body.style.opacity = "0";
 
     setTimeout(() => {
 
-        document.body.style.opacity = "0";
+        window.location.replace("Sendo1.html");
 
-        setTimeout(() => {
-            window.location.href = "Sendo1.html";
-        },500);
+    }, 500);
 
-    },5000);
-
-}
+}, 5000);
 
 // Landing page → Download page
 
