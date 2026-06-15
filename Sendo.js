@@ -1,13 +1,13 @@
 // Splash screen → Landing page
 
-if(window.location.pathname.includes("index.html")){
+if(window.location.pathname.includes("./index.html")){
 
     setTimeout(() => {
 
         document.body.style.opacity = "0";
 
         setTimeout(() => {
-            window.location.href = "Sendo1.html";
+            window.location.href = "./Sendo1.html";
         },500);
 
     },5000);
@@ -26,7 +26,7 @@ if(stockUp){
 
         setTimeout(() => {
 
-            window.location.href = "Sendo2.html";
+            window.location.href = "./Sendo2.html";
 
         },500);
 
@@ -45,7 +45,7 @@ if(orderBtn){
 
         setTimeout(() => {
 
-            window.location.href = "Sendo2.html";
+            window.location.href = "./Sendo2.html";
 
         },500);
 
